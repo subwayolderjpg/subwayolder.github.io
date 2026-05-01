@@ -9,18 +9,18 @@
   <meta name="description" content="您现在开始试写字吧。然后基本都有普通快捷键，只是插入图片到Hexo好像有点复杂。 1.1 程序设计概述程序程序设计语言一代机器；二代汇编；三代高级 1.2 算法概述程序&#x3D;数据结构+算法 数据结构&#x3D;数据类型+数据组织形式&#x3D;程序中对数据描述 算法是操作步骤。data是对象，算法是步骤，也是灵魂，算法是问题解决思想描述思路描述，算法独立于计算机。计算机只是去实现精妙的算法思">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语理论第一课">
-<meta property="og:url" content="https://subwayolderjpg.github.io/2024/10/15/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/index.html">
+<meta property="og:url" content="https://subwayolderjpg.github.io/2024/10/15/1-1%20C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/index.html">
 <meta property="og:site_name" content="Subwayolder&#39;s Blog">
 <meta property="og:description" content="您现在开始试写字吧。然后基本都有普通快捷键，只是插入图片到Hexo好像有点复杂。 1.1 程序设计概述程序程序设计语言一代机器；二代汇编；三代高级 1.2 算法概述程序&#x3D;数据结构+算法 数据结构&#x3D;数据类型+数据组织形式&#x3D;程序中对数据描述 算法是操作步骤。data是对象，算法是步骤，也是灵魂，算法是问题解决思想描述思路描述，算法独立于计算机。计算机只是去实现精妙的算法思">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://subwayolderjpg.github.io/.io//image-20241015221900542.PNG">
-<meta property="og:image" content="https://subwayolderjpg.github.io/.io//%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20241015224412.PNG">
+<meta property="og:image" content="https://subwayolderjpg.github.io/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/image-20241015221900542.PNG">
+<meta property="og:image" content="https://subwayolderjpg.github.io/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20241015224412.PNG">
 <meta property="article:published_time" content="2024-10-15T14:38:08.000Z">
-<meta property="article:modified_time" content="2024-10-15T15:03:45.226Z">
+<meta property="article:modified_time" content="2024-10-19T05:03:47.547Z">
 <meta property="article:author" content="Subwayolder">
 <meta property="article:tag" content="Subwayolder">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://subwayolderjpg.github.io/.io//image-20241015221900542.PNG">
+<meta name="twitter:image" content="https://subwayolderjpg.github.io/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/image-20241015221900542.PNG">
   
     <link rel="alternate" href="/atom.xml" title="Subwayolder's Blog" type="application/atom+xml">
   
@@ -79,9 +79,9 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-C语理论第一课" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-1-1 C语理论第一课" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/10/15/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/" class="article-date">
+    <a href="/2024/10/15/1-1%20C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/" class="article-date">
   <time class="dt-published" datetime="2024-10-15T14:38:08.000Z" itemprop="datePublished">2024-10-15</time>
 </a>
     
@@ -111,11 +111,11 @@
 <p>法一 自然语言</p>
 <p>①假设 初始值i&#x3D;1</p>
 <p>法2：流程图</p>
-<p><img src="/.io//image-20241015221900542.PNG" alt="1-1"></p>
+<p><img src="/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/image-20241015221900542.PNG" alt="1-1"></p>
 <p>缺点是流程线→的滥用；改良后是实用的N-S流程图，本书将多次使用</p>
-<p><img src="/.io//%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20241015224412.PNG" alt="1-2"></p>
+<p><img src="/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20241015224412.PNG" alt="1-2"></p>
 <p>第三种是更接近程序代码的伪代码，这个在《大数据算法课程》之中我们见过。</p>
-<h1 id="1-3-结构化程序"><a href="#1-3-结构化程序" class="headerlink" title="1.3 结构化程序"></a>1.3 结构化程序</h1><h2 id="1-3-1-结构化程序基本控制结构"><a href="#1-3-1-结构化程序基本控制结构" class="headerlink" title="1.3.1 结构化程序基本控制结构"></a>1.3.1 结构化程序基本控制结构</h2><p>基本思想：自顶向下、逐步求精、分而治之</p>
+<h1 id="1-3-结构化程序"><a href="#1-3-结构化程序" class="headerlink" title="1.3 结构化程序"></a>1.3 结构化程序</h1><h2 id="1-3-1-结构化程序基本控制结构"><a href="#1-3-1-结构化程序基本控制结构" class="headerlink" title="1.3.1 结构化程序基本控制结构"></a>1.3.1 结构化程序基本控制结构</h2><p><strong>基本思想：</strong>自顶向下、逐步求精、分而治之</p>
 <p>复杂问题→小问题</p>
 <p>提出者：Wirth</p>
 <p>认为任何算法可以通过3种基本控制结构+嵌套组合来实现。三种结构：</p>
@@ -126,7 +126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://subwayolderjpg.github.io/2024/10/15/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/" data-id="cm2ak971a0000p8vkhjsgbi0l" data-title="C语理论第一课" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://subwayolderjpg.github.io/2024/10/15/1-1%20C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/" data-id="cmom9ka5i00003ovkf3291zpd" data-title="C语理论第一课" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -135,6 +135,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2024/10/16/2-1%20C%20language%20overview/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          2.1 C language overview
+        
+      </div>
+    </a>
   
   
     <a href="/2024/08/21/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -164,7 +173,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">十月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">八月 2024</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/05/">五月 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">十月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">八月 2024</a></li></ul>
     </div>
   </div>
 
@@ -177,7 +186,19 @@
       <ul>
         
           <li>
-            <a href="/2024/10/15/C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/">C语理论第一课</a>
+            <a href="/2026/05/01/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E6%A6%82%E5%BF%B5%E5%8E%98%E6%B8%85/">具身智能概念厘清</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/16/unit3%20data-structure/">3.1 DS</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/16/2-1%20C%20language%20overview/">2.1 C language overview</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/15/1-1%20C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/">C语理论第一课</a>
           </li>
         
           <li>
@@ -197,7 +218,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2024 Subwayolder<br>
+      &copy; 2026 Subwayolder<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
