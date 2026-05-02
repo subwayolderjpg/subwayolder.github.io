@@ -76,6 +76,87 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-0501-RL最新进展攻读" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/05/02/0501-RL%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95%E6%94%BB%E8%AF%BB/" class="article-date">
+  <time class="dt-published" datetime="2026-05-02T01:44:59.000Z" itemprop="datePublished">2026-05-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/05/02/0501-RL%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95%E6%94%BB%E8%AF%BB/">0501 RL最新进展攻读</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>好了家人们就说是按照经验贴说<strong>“①定期追踪github trend;②能够自主无障碍阅读英文介绍文档”</strong>要求，5月2日的研读内容是基于薯上一篇RL前沿模型进展交流帖去进行学习。</p>
+<p>本人基础：正经ML原理实现进度输出层Softmax；</p>
+<p>试图理解：行业大神forum的高专业度进展分享：这是一篇关于GigaBrain极佳视界有关RAMP 世界模型与π0.6模型关联解读论文《GigaBrain-0.5M*: a VLA That Learns From World Model-Based Reinforcement Learning》的评论，认为原文指出：π 0.6* 中的RECAP是对RAMP中世界模型提供z做积分后得到的边际分布。“，感兴趣可红薯搜“ pi 0.6<em>竟是RAMP特殊情况”，对照原全英论文也是对业内高水平人士如何提炼论文笔记本身一次很好的观摩。感觉分开看的数理语言都大致能懂，但组合起来就看不太懂这篇文献了，大抵π 0.6</em> 和RAMP两个世界模型相关概念都还未掌握，因此陌生。尽管如此为了能够跟上前沿发展和评论区大神不明觉厉的极简表达，我还是让ds拆解了其中术语，来进行今天的论文拆解学习：</p>
+<p>RAMP世界模型是一个深度学习模型，使用 Transformer 或 CNN&#x2F;RNN等神经架构。神奇的是，在利用ds整理完相关术语的此刻，我对这篇文章的认知理解增强了。</p>
+<p>首先是找到互联网DL花书pdf，投喂给ds，它就能告诉你所需要的相关概念在何处，进行背景补充阅读，同时也要注意花书对本论文概念覆盖极其有限，一定要综合读；</p>
+<p>ds拆解了深度学习术语：策略 π(a∣S)；优势函数；</p>
+<ol>
+<li>策略——介绍强化学习背景，包括强化学习的目标；</li>
+<li>优势函数 **A(s,a)**——</li>
+<li>KL正则化：在花书中提到了KL梯度系统介绍，但我看完以后不太能消化，还要细分；</li>
+<li>参考策略<strong>π_ref</strong>：核心理念认为是从一个情境学到策略去进行另一个情境的改善，eg 分辨猫狗情境1 到 分辨毛毛虫蝴蝶情境2 间，底层有关光学和视觉的基础概念可迁移；但详细了解还须前置学PPO；</li>
+</ol>
+<p>ds补充参考文献：</p>
+<ol>
+<li>Sutton &amp; Barto 《Reinforcement Learning: An Introduction》第13章（策略梯度方法）</li>
+</ol>
+<p>鉴于花书对强化学习概念覆盖有限，建议：</p>
+<table>
+<thead>
+<tr>
+<th align="left">概念</th>
+<th align="left">推荐资源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">策略 π(a|s)</td>
+<td align="left">Sutton &amp; Barto 第3章（MDP）、第13章（策略梯度）</td>
+</tr>
+<tr>
+<td align="left">优势函数 A(s,a)</td>
+<td align="left">Sutton &amp; Barto 第13章；或 OpenAI Spinning Up 文档</td>
+</tr>
+<tr>
+<td align="left">KL 散度</td>
+<td align="left"><strong>花书第3.13节已够用</strong></td>
+</tr>
+<tr>
+<td align="left">参考策略</td>
+<td align="left">PPO&#x2F;TRPO 原论文（Schulman et al., 2017）</td>
+</tr>
+</tbody></table>
+<p><strong>一句话建议</strong>：花书的 <strong>第3.13节（KL散度）</strong> 是你目前可以直接读的；强化学习概念（策略、优势、参考策略）需要补充其他资料。</p>
+<p>补充完基础知识和红薯的日志，我们对这篇RL前沿的内容至少能够吃透到1.RAMP概述；6.RAMP与RECAP关系，当然，距离吃透2-5解读甚至机器人大脑公司的这篇原文还需要很大的数理夯基空间。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://subwayolderjpg.github.io/2026/05/02/0501-RL%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95%E6%94%BB%E8%AF%BB/" data-id="cmonr4a560000lcvk8m32ed1k" data-title="0501 RL最新进展攻读" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-具身智能概念厘清" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/05/01/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E6%A6%82%E5%BF%B5%E5%8E%98%E6%B8%85/" class="article-date">
@@ -107,7 +188,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://subwayolderjpg.github.io/2026/05/01/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E6%A6%82%E5%BF%B5%E5%8E%98%E6%B8%85/" data-id="cmomk63y90002fovkf7r3hde8" data-title="具身智能概念厘清" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://subwayolderjpg.github.io/2026/05/01/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E6%A6%82%E5%BF%B5%E5%8E%98%E6%B8%85/" data-id="cmonr4a6a0004lcvk14on4pxp" data-title="具身智能概念厘清" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -380,7 +461,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://subwayolderjpg.github.io/2024/10/16/unit3%20data-structure/" data-id="cmomk63yi0004fovkclfm7m3w" data-title="3.1 DS" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://subwayolderjpg.github.io/2024/10/16/unit3%20data-structure/" data-id="cmonr4a6d0005lcvkhowb9k3i" data-title="3.1 DS" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -620,7 +701,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://subwayolderjpg.github.io/2024/10/16/2-1%20C%20language%20overview/" data-id="cmomk63y60001fovkglh1e84i" data-title="2.1 C language overview" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://subwayolderjpg.github.io/2024/10/16/2-1%20C%20language%20overview/" data-id="cmonr4a5t0001lcvk48uc5zmw" data-title="2.1 C language overview" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -679,7 +760,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://subwayolderjpg.github.io/2024/10/15/1-1%20C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/" data-id="cmomk63xy0000fovk725nafh5" data-title="C语理论第一课" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://subwayolderjpg.github.io/2024/10/15/1-1%20C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/" data-id="cmonr4a620002lcvk8d74h2yj" data-title="C语理论第一课" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -730,7 +811,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://subwayolderjpg.github.io/2024/08/21/hello-world/" data-id="cmomk63yg0003fovk3h3l9rex" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://subwayolderjpg.github.io/2024/08/21/hello-world/" data-id="cmonr4a650003lcvkg08307ed" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -773,6 +854,10 @@
       <ul>
         
           <li>
+            <a href="/2026/05/02/0501-RL%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95%E6%94%BB%E8%AF%BB/">0501 RL最新进展攻读</a>
+          </li>
+        
+          <li>
             <a href="/2026/05/01/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E6%A6%82%E5%BF%B5%E5%8E%98%E6%B8%85/">具身智能概念厘清</a>
           </li>
         
@@ -786,10 +871,6 @@
         
           <li>
             <a href="/2024/10/15/1-1%20C%E8%AF%AD%E7%90%86%E8%AE%BA%E7%AC%AC%E4%B8%80%E8%AF%BE/">C语理论第一课</a>
-          </li>
-        
-          <li>
-            <a href="/2024/08/21/hello-world/">Hello World</a>
           </li>
         
       </ul>
